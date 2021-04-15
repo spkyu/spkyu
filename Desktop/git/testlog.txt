@@ -78,4 +78,4 @@
 
 ¿‹µ∑:	411.0 WON
 	500 WON 0.0	100 WON 4.0	50 WON 0.0	10 WON 1.0
-test
+test2

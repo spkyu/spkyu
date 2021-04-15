@@ -1,29 +1,50 @@
 package Ticketing;
 
 public class Cacuage {
-	public int calage(int realage, int amountticket) {
+	public int calage(int daynight, int realage, int amountticket) {
 
 		int ticketprice = 0;
-
-		if ((realage <= 21) && (realage >= 20)) {
-			ticketprice = 0;
-			return ticketprice;
-		} else if ((realage <= 19) && (realage >= 10)) {
-			ticketprice = 37000 * amountticket;
-			return ticketprice;
-		} else if ((realage <= 9) && (realage >= 4)) {
-			ticketprice = 40000 * amountticket;
-			return ticketprice;
-		} else if (((realage <= 3) && (realage >= 0)) || ((realage <= 99) && (realage >= 58))) {
-			ticketprice = 46000 * amountticket;
-			return ticketprice;
-		} else if ((realage <= 57) && (realage > 22)) {
-			ticketprice = 37000 * amountticket;
-			return ticketprice;
-		} else {
-			return ticketprice;
+		if (daynight == 1) {
+			if ((realage <= 21) && (realage >= 20)) {
+				ticketprice = 0;
+				return ticketprice;
+			} else if ((realage <= 19) && (realage >= 10)) {
+				ticketprice = 44000 * amountticket;
+				return ticketprice;
+			} else if ((realage <= 9) && (realage >= 4)) {
+				ticketprice = 47000 * amountticket;
+				return ticketprice;
+			} else if (((realage <= 3) && (realage >= 0)) || ((realage <= 99) && (realage >= 58))) {
+				ticketprice = 56000 * amountticket;
+				return ticketprice;
+			} else if ((realage <= 57) && (realage > 22)) {
+				ticketprice = 44000 * amountticket;
+				return ticketprice;
+			} else {
+				return ticketprice;
+			}
+		
+		}else if(daynight==2) {
+			if ((realage <= 21) && (realage >= 20)) {
+				ticketprice = 0;
+				return ticketprice;
+			} else if ((realage <= 19) && (realage >= 10)) {
+				ticketprice = 37000 * amountticket;
+				return ticketprice;
+			} else if ((realage <= 9) && (realage >= 4)) {
+				ticketprice = 40000 * amountticket;
+				return ticketprice;
+			} else if (((realage <= 3) && (realage >= 0)) || ((realage <= 99) && (realage >= 58))) {
+				ticketprice = 46000 * amountticket;
+				return ticketprice;
+			} else if ((realage <= 57) && (realage > 22)) {
+				ticketprice = 37000 * amountticket;
+				return ticketprice;
+			} else {
+				return ticketprice;
+			}
 		}
-
+		return ticketprice;
 	}
 
 	public String ageString(int realage) {
@@ -95,4 +116,19 @@ public class Cacuage {
 		}
 
 	}
+	
+	public String strdaynight(int daynight) {
+		String str="";
+		if(daynight==1) {
+			str="주간";
+			return str;
+		}else if(daynight==2) {
+			str="야간";
+			return str;
+		}else {
+			return str;
+			
+		}
+	}
+	
 }

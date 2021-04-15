@@ -1,16 +1,19 @@
-/*
- * package Ticketing;
- * 
- * public class Numbers {
- * 
- * public static final int totalsum = 0; public static final int count = 0;
- * public static final String strdaynight = ""; public static final String
- * strold = ""; public static final String strdiscount = ""; public static final
- * int ticketprice = 0;
- * 
- * public static final int daynight = 0; public static final String agedata =
- * ""; public static final int amountticket = 0; public static final int
- * discount = 0; public static final int countinue = 0;
- * 
- * }
- */
+
+package Ticketing;
+
+public class Numbers {
+
+	public static int totalsum = 0;
+	public static int count = 0;
+	public static String strdaynight = "";
+	public static String strold = "";
+	public static String strdiscount = "";
+	public static int ticketprice = 0;
+
+	public static int daynight = 0;
+	public static String agedata = "";
+	public static int amountticket = 0;
+	public static int discount = 0;
+	public static int countinue = 0;
+	public static int realage = 0;
+}

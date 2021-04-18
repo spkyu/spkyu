@@ -2,7 +2,7 @@ package Ticketing;
 
 public class Cacuage {
 	public int calage(int daynight, int realage, int amountticket) {
-
+//wow
 		int ticketprice = 0;
 		if (daynight == 1) {
 			if ((realage <= 21) && (realage >= 20)) {

@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class calcu {
-
+//wewe
 	public void calday() throws IOException {
 		ArrayList<String> array = new ArrayList();
 		Scanner scan = new Scanner(System.in);

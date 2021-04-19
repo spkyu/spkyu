@@ -19,5 +19,5 @@ public class Numbers {
 	public static int countinue2 = 0;
 	public static int realage = 0;
 	
-	public static String Filewriteadress = "C:\\Users\\kopo\\Desktop\\test.csv";
+	public static String Filewriteadress = "test.csv";
 }

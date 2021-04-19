@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class calcu {
-//wewe
+
 	public void calday() throws IOException {
 		ArrayList<String> array = new ArrayList();
 		Scanner scan = new Scanner(System.in);
@@ -40,20 +40,20 @@ public class calcu {
 
 		}
 		String date = scan.nextLine();
-		row = 0;
-		for (row = 0; row < 20; row++) {
+		
+		for (int i= 0; i < row-1; i++) {
 
-			if (indat[row][0].equals(date) && indat[row][1].equals("주간")) {
-				sumday += Integer.parseInt(indat[row][4]);
-				countday += Integer.parseInt(indat[row][3]);
-				today = indat[row][0];
+			if (indat[i][0].equals(date) && indat[i][1].equals("주간")) {
+				sumday += Integer.parseInt(indat[i][4]);
+				countday += Integer.parseInt(indat[i][3]);
+				today = indat[i][0];
 				strday = "주간" + today + "주간합계" + sumday + "주간매수" + countday;
 
-			} else if (indat[row][0].equals(date) && indat[row][1].equals("야간")) {
-				sumnight += Integer.parseInt(indat[row][4]);
-				countnight += Integer.parseInt(indat[row][3]);
-				today = indat[row][0];
-				strnight = "주간" + today + "야간합계" + sumnight + "야간매수" + countnight;
+			} else if (indat[i][0].equals(date) && indat[i][1].equals("야간")) {
+				sumnight += Integer.parseInt(indat[i][4]);
+				countnight += Integer.parseInt(indat[i][3]);
+				today = indat[i][0];
+				strnight = "야간" + today + "야간합계" + sumnight + "야간매수" + countnight;
 
 			}
 

@@ -37,21 +37,21 @@ public class Mainticket {
 				Numbers.count++;
 				arralist.add(print.printarray(Numbers.strdaynight, Numbers.strold, Numbers.amountticket,
 						Numbers.ticketprice, Numbers.strdiscount));
-				System.out.println("ÇÕ°è±Ý¾×" + Numbers.ticketprice);
+				System.out.println("í•©ê³„ê¸ˆì•¡" + Numbers.ticketprice);
 				Numbers.countinue = input.continuee();
 				if (Numbers.countinue == 2) {
-					System.out.println("¹ß±Ç³»¿ë\n");
+					System.out.println("ë°œê¶Œë‚´ìš©\n");
 					for (int z = 0; z < Numbers.count; z++) {
 						System.out.println(arralist.get(z));
 						fwfw.filewrite(arralist.get(z) + "\r\n");
 					}
-					System.out.printf("ÀÔÀå·á ÃÑ¾×: %8d \n ", Numbers.totalsum);
+					System.out.printf("ìž…ìž¥ë£Œ ì´ì•¡: %8d \n ", Numbers.totalsum);
 					break;
 				}
 			}
 			Numbers.countinue2 = input.continuee2();
 			if (Numbers.countinue2 == 2) {
-				System.out.println("¹ß±ÇÁ¾·á");
+				System.out.println("ë°œê¶Œì¢…ë£Œ");
 				break;
 			}
 		}

@@ -52,19 +52,19 @@ public class Cacuage {
 		String str = "";
 
 		if ((realage <= 21) && (realage >= 20)) {
-			str = "À¯¾Æ";
+			str = "ìœ ì•„";
 			return str;
 		} else if ((realage <= 19) && (realage >= 10)) {
-			str = "Ã»¼Ò³â";
+			str = "ì²­ì†Œë…„";
 			return str;
 		} else if ((realage <= 9) && (realage >= 4)) {
-			str = "¼Ò¾Æ";
+			str = "ì†Œì•„";
 			return str;
 		} else if (((realage <= 3) && (realage >= 0)) || ((realage <= 99) && (realage >= 58))) {
-			str = "´ëÀÎ";
+			str = "ëŒ€ì¸";
 			return str;
 		} else if ((realage <= 57) && (realage > 22)) {
-			str = "³ëÀÎ";
+			str = "ë…¸ì¸";
 			return str;
 		} else {
 			return str;
@@ -74,18 +74,18 @@ public class Cacuage {
 	public int discount(int discount, int ticketprice) {
 
 		if (discount == 1) {
-			ticketprice = ticketprice;// ¾øÀ½
+			ticketprice = ticketprice;// ì—†ìŒ
 			return ticketprice;
-		} else if (discount == 2) {// Àå¾ÖÀÎ
+		} else if (discount == 2) {// ì¥ì• ì¸
 			ticketprice = ticketprice * 60 / 100;
 			return ticketprice;
-		} else if (discount == 3) {// ±¹°¡À¯°øÀÚ
+		} else if (discount == 3) {// êµ­ê°€ìœ ê³µì
 			ticketprice = ticketprice * 50 / 100;
 			return ticketprice;
-		} else if (discount == 4) {// ´ÙÀÚ³à
+		} else if (discount == 4) {// ë‹¤ìë…€
 			ticketprice = ticketprice * 80 / 100;
 			return ticketprice;
-		} else if (discount == 5) {// ÀÓ»êºÎ
+		} else if (discount == 5) {// ì„ì‚°ë¶€
 			ticketprice = ticketprice * 75 / 100;
 			return ticketprice;
 		} else {
@@ -97,19 +97,19 @@ public class Cacuage {
 	public String discountString(int discount) {
 		String str = "";
 		if (discount == 1) {
-			str = "¾øÀ½";// ¾øÀ½
+			str = "ì—†ìŒ";// ì—†ìŒ
 			return str;
-		} else if (discount == 2) {// Àå¾ÖÀÎ
-			str = "Àå¾ÖÀÎ";// ¾øÀ½
+		} else if (discount == 2) {// ì¥ì• ì¸
+			str = "ì¥ì• ì¸";// ì—†ìŒ
 			return str;
-		} else if (discount == 3) {// ±¹°¡À¯°øÀÚ
-			str = "±¹°¡À¯°øÀÚ";// ¾øÀ½
+		} else if (discount == 3) {// êµ­ê°€ìœ ê³µì
+			str = "êµ­ê°€ìœ ê³µì";// ì—†ìŒ
 			return str;
-		} else if (discount == 4) {// ´ÙÀÚ³à
-			str = "´ÙÀÚ³à";// ¾øÀ½
+		} else if (discount == 4) {// ë‹¤ìë…€
+			str = "ë‹¤ìë…€";// ì—†ìŒ
 			return str;
-		} else if (discount == 5) {// ÀÓ»êºÎ
-			str = "ÀÓ»êºÎ";// ¾øÀ½
+		} else if (discount == 5) {// ì„ì‚°ë¶€
+			str = "ì„ì‚°ë¶€";// ì—†ìŒ
 			return str;
 		} else {
 			return str;
@@ -120,10 +120,10 @@ public class Cacuage {
 	public String strdaynight(int daynight) {
 		String str="";
 		if(daynight==1) {
-			str="ÁÖ°£";
+			str="ì£¼ê°„";
 			return str;
 		}else if(daynight==2) {
-			str="¾ß°£";
+			str="ì•¼ê°„";
 			return str;
 		}else {
 			return str;

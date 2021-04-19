@@ -6,14 +6,14 @@ public class Inputclass {
 
 	public int inputday() {
 		Scanner scan = new Scanner(System.in);
-		System.out.println("±ÇÁ¾À» ¼±ÅÃÇÏ¼¼¿ä.\n" + "1. ÁÖ°£±Ç\n" + "2. ¾ß°£±Ç");
+		System.out.println("ê¶Œì¢…ì„ ì„ íƒí•˜ì„¸ìš”.\n" + "1. ì£¼ê°„ê¶Œ\n" + "2. ì•¼ê°„ê¶Œ");
 		int daynight = scan.nextInt();
 		return daynight;
 	}
 
 	public int ammount() {
 		Scanner scan = new Scanner(System.in);
-		System.out.println("Æ¼ÄÏÀ» ¸îÀå±¸¸ÅÇÏ½Ã°Ú½À´Ï±î?");
+		System.out.println("í‹°ì¼“ì„ ëª‡ì¥êµ¬ë§¤í•˜ì‹œê² ìŠµë‹ˆê¹Œ?");
 		int amountticket = scan.nextInt();
 
 		return amountticket;
@@ -21,7 +21,7 @@ public class Inputclass {
 
 	public int discount() {
 		Scanner scan = new Scanner(System.in);
-		System.out.println("¿ì´ë»çÇ×À» ¼±ÅÃÇÏ¼¼¿ä.\n" + "1. ¾øÀ½\n" + "2. Àå¾ÖÀÎ\n" + "3. ±¹°¡À¯°øÀÚ\n" + "4. ´ÙÀÚ³à \n" + "5. ÀÓ»êºÎ");
+		System.out.println("ìš°ëŒ€ì‚¬í•­ì„ ì„ íƒí•˜ì„¸ìš”.\n" + "1. ì—†ìŒ\n" + "2. ì¥ì• ì¸\n" + "3. êµ­ê°€ìœ ê³µì\n" + "4. ë‹¤ìë…€ \n" + "5. ì„ì‚°ë¶€");
 		int discount = scan.nextInt();
 
 		return discount;
@@ -29,7 +29,7 @@ public class Inputclass {
 
 	public int agedata() {
 		Scanner scan = new Scanner(System.in);
-		System.out.println("ÁÖ¹Î¹øÈ£¸¦ ÀÔ·ÂÇÏ¼¼¿ä.");
+		System.out.println("ì£¼ë¯¼ë²ˆí˜¸ë¥¼ ì…ë ¥í•˜ì„¸ìš”.");
 		String agedata = scan.next();
 		int realage = Integer.parseInt(agedata.substring(0, 2));
 		return realage;
@@ -37,14 +37,14 @@ public class Inputclass {
 
 	public int continuee() {
 		Scanner scan = new Scanner(System.in);
-		System.out.println("°è¼Ó¹ß±ÇÇÏ½Ã°Ù½À´Ï±î" + "1. Æ¼ÄÏ¹ß±Ç" + "2.Á¾·á");
+		System.out.println("ê³„ì†ë°œê¶Œí•˜ì‹œê²ŸìŠµë‹ˆê¹Œ" + "1. í‹°ì¼“ë°œê¶Œ" + "2.ì¢…ë£Œ");
 		int countinue = scan.nextInt();
 		return countinue;
 	}
 	
 	public int continuee2() {
 		Scanner scan = new Scanner(System.in);
-		System.out.println("ÀçÁÖ¹® ÇÏ½Ã°Ú½À´Ï±î?? 1.yes 2.no");
+		System.out.println("ì¬ì£¼ë¬¸ í•˜ì‹œê² ìŠµë‹ˆê¹Œ?? 1.yes 2.no");
 		int continue2 = scan.nextInt();
 		return continue2;
 	

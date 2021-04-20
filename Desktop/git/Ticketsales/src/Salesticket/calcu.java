@@ -24,7 +24,7 @@ public class calcu {
 		String strnight = "";
 		String line = "";
 
-		BufferedReader reader = new BufferedReader(new FileReader("test.csv"));
+		BufferedReader reader = new BufferedReader(new FileReader("C:\\Users\\kopo\\Desktop\\test.csv"));
 		int row = 0;
 		while ((line = reader.readLine()) != null) {
 			for (int z = 0; z < 6; z++) {
@@ -34,7 +34,7 @@ public class calcu {
 				// System.out.print(arr[z]);
 
 			}
-			System.out.println();
+			
 			row++;
 
 		}

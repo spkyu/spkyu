@@ -6,4 +6,5 @@ public class Numberss {
 
 	public static String adress="C:\\\\Users\\\\kopo\\\\Desktop\\\\saletest.csv";
 	public static String date="";
+	public static String[][] indat;
 }

@@ -9,12 +9,12 @@ import java.util.Scanner;
 
 public class calcu {
 
-	public void calday() throws IOException {
-		ArrayList<String> array = new ArrayList();
+	public void calday() throws Exception {
 		Scanner scan = new Scanner(System.in);
 
-		String[][] indat = new String[10000][6];
+		// String[][] indat = new String[10000][6];
 		System.out.println("원하는 조회날짜를 입력해 주십시오." + "ex)2021.04.20");
+
 		int sumday = 0;
 		int sumnight = 0;
 		int countday = 0;
@@ -24,23 +24,11 @@ public class calcu {
 		String strnight = "";
 		String line = "";
 
-		BufferedReader reader = new BufferedReader(new FileReader("C:\\Users\\kopo\\Desktop\\test.csv"));
-		int row = 0;
-		while ((line = reader.readLine()) != null) {
-			for (int z = 0; z < 6; z++) {
-				String[] arr = line.split(",");
-				indat[row][z] = arr[z];
-				// System.out.println(line);
-				// System.out.print(arr[z]);
-
-			}
-
-			row++;
-
-		}
+		datatransform dataform = new datatransform();
+		String[][] indat = dataform.Stringarr();
 		String date = scan.nextLine();
 
-		for (int i = 0; i < row - 1; i++) {
+		for (int i = 0; i < Numberss.row - 1; i++) {//
 
 			if (indat[i][0].equals(date) && indat[i][1].equals("주간")) {
 				sumday += Integer.parseInt(indat[i][4]);
@@ -55,12 +43,13 @@ public class calcu {
 			}
 
 		}
+
 		int amounttket_day_new = 0;
 		int amounttket_day_child = 0;
 		int amounttket_day_teenager = 0;
 		int amounttket_day_adult = 0;
 		int amounttket_day_senior = 0;
-		for (int i = 0; i < row - 1; i++) {
+		for (int i = 0; i < 20; i++) {//
 			if (indat[i][1].equals("주간") && indat[i][2].equals("유아")) {
 				amounttket_day_new += Integer.parseInt(indat[i][3]);
 			} else if (indat[i][1].equals("주간") && indat[i][2].equals("청소년")) {
@@ -78,7 +67,7 @@ public class calcu {
 		int amounttket_night_teenager = 0;
 		int amounttket_night_adult = 0;
 		int amounttket_night_senior = 0;
-		for (int i = 0; i < row - 1; i++) {
+		for (int i = 0; i < Numberss.row - 1; i++) {
 			if (indat[i][1].equals("야간") && indat[i][2].equals("유아")) {
 				amounttket_night_new += Integer.parseInt(indat[i][3]);
 			} else if (indat[i][1].equals("야간") && indat[i][2].equals("청소년")) {
@@ -107,4 +96,37 @@ public class calcu {
 		fwfw.filewrite(head + "\n" + strday + "\n" + strnight + "\n");
 	}
 
+	/*
+	 * public int sumday() throws Exception {
+	 * 
+	 * Scanner scan = new Scanner(System.in); String date = scan.nextLine();
+	 * datatransform dataform = new datatransform(); int sumday = 0; String[][]
+	 * indat = dataform.Stringarr();
+	 * 
+	 * for (int i = 0; i < Numberss.row - 1; i++) { if (indat[i][0].equals(date) &&
+	 * indat[i][1].equals("주간")) sumday += Integer.parseInt(indat[i][4]); } return
+	 * sumday; }
+	 * 
+	 * public int countday() throws Exception { datatransform dataform = new
+	 * datatransform(); int countday = 0; String[][] indat = dataform.Stringarr();
+	 * for (int i = 0; i < Numberss.row - 1; i++) { countday +=
+	 * Integer.parseInt(indat[i][3]);
+	 * 
+	 * } return countday; }
+	 * 
+	 * public String today() throws Exception { datatransform dataform = new
+	 * datatransform(); String today = ""; String[][] indat = dataform.Stringarr();
+	 * for (int i = 0; i < Numberss.row - 1; i++) { today = indat[i][0];
+	 * 
+	 * } return today; }
+	 * 
+	 * public String date() throws Exception { Scanner scan = new
+	 * Scanner(System.in);
+	 * 
+	 * Numberss.date = scan.nextLine();
+	 * 
+	 * return Numberss.date;
+	 * 
+	 * }
+	 */
 }

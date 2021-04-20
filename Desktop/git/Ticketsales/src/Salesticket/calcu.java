@@ -7,6 +7,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import Ticketing.Filewrite;
+
 public class calcu {
 
 	public void calday() throws IOException {
@@ -46,19 +48,23 @@ public class calcu {
 				sumday += Integer.parseInt(indat[i][4]);
 				countday += Integer.parseInt(indat[i][3]);
 				today = indat[i][0];
-				strday = "주간" + today + "주간합계" + sumday + "주간매수" + countday;
+				strday = "주"+","+today+","+sumday+","+countday;
 
 			} else if (indat[i][0].equals(date) && indat[i][1].equals("야간")) {
 				sumnight += Integer.parseInt(indat[i][4]);
 				countnight += Integer.parseInt(indat[i][3]);
 				today = indat[i][0];
-				strnight = "야간" + today + "야간합계" + sumnight + "야간매수" + countnight;
+				strnight = "야"+","+today+","+sumnight+","+countnight;
 
 			}
 
 		}
+		fileWrite fwfw = new fileWrite();
+		String head= "주야구분"+"날짜"+","+"판매금액"+","+"매수";
+		System.out.println(head);
 		System.out.println(strday);
 		System.out.println(strnight);
+		fwfw.filewrite(head+"\n"+strday+"\n"+strnight+"\n");
 	}
 
 }

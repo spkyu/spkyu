@@ -12,7 +12,7 @@ public class calcu {
 	public void calday() throws Exception {
 		Scanner scan = new Scanner(System.in);
 		calcu cal = new calcu();
-		// String[][] indat = new String[10000][6];
+
 		System.out.println("원하는 조회날짜를 입력해 주십시오." + "ex)2021.04.20");
 		Numberss.date = cal.date();
 		int sumday = 0;
@@ -131,7 +131,8 @@ public class calcu {
 
 		int amounttket_night_new = 0;
 		for (int i = 0; i < Numberss.row; i++) {
-			if (Numberss.indat[i][1].equals("야간") && Numberss.indat[i][2].equals("유아")) {
+			if (Numberss.indat[i][0].equals(Numberss.date) && Numberss.indat[i][1].equals("야간")
+					&& Numberss.indat[i][2].equals("유아")) {
 				amounttket_night_new += Integer.parseInt(Numberss.indat[i][3]);
 			}
 
@@ -144,7 +145,8 @@ public class calcu {
 
 		int amounttket_night_teenager = 0;
 		for (int i = 0; i < Numberss.row; i++) {
-			if (Numberss.indat[i][1].equals("야간") && Numberss.indat[i][2].equals("청소년")) {
+			if (Numberss.indat[i][0].equals(Numberss.date) && Numberss.indat[i][1].equals("야간")
+					&& Numberss.indat[i][2].equals("청소년")) {
 				amounttket_night_teenager += Integer.parseInt(Numberss.indat[i][3]);
 			}
 
@@ -157,7 +159,8 @@ public class calcu {
 
 		int amounttket_night_child = 0;
 		for (int i = 0; i < Numberss.row; i++) {
-			if (Numberss.indat[i][1].equals("야간") && Numberss.indat[i][2].equals("소아")) {
+			if (Numberss.indat[i][0].equals(Numberss.date) && Numberss.indat[i][1].equals("야간")
+					&& Numberss.indat[i][2].equals("소아")) {
 				amounttket_night_child += Integer.parseInt(Numberss.indat[i][3]);
 			}
 
@@ -169,7 +172,8 @@ public class calcu {
 
 		int amounttket_night_adult = 0;
 		for (int i = 0; i < Numberss.row; i++) {
-			if (Numberss.indat[i][1].equals("야간") && Numberss.indat[i][2].equals("대인")) {
+			if (Numberss.indat[i][0].equals(Numberss.date) && Numberss.indat[i][1].equals("야간")
+					&& Numberss.indat[i][2].equals("대인")) {
 				amounttket_night_adult += Integer.parseInt(Numberss.indat[i][3]);
 			}
 
@@ -181,7 +185,8 @@ public class calcu {
 
 		int amounttket_night_senior = 0;
 		for (int i = 0; i < Numberss.row; i++) {
-			if (Numberss.indat[i][1].equals("야간") && Numberss.indat[i][2].equals("노인")) {
+			if (Numberss.indat[i][0].equals(Numberss.date) && Numberss.indat[i][1].equals("야간")
+					&& Numberss.indat[i][2].equals("노인")) {
 				amounttket_night_senior += Integer.parseInt(Numberss.indat[i][3]);
 			}
 
@@ -193,7 +198,8 @@ public class calcu {
 
 		int amounttket_day_new = 0;
 		for (int i = 0; i < Numberss.row; i++) {
-			if (Numberss.indat[i][1].equals("주간") && Numberss.indat[i][2].equals("유아")) {
+			if (Numberss.indat[i][0].equals(Numberss.date) && Numberss.indat[i][1].equals("주간")
+					&& Numberss.indat[i][2].equals("유아")) {
 				amounttket_day_new += Integer.parseInt(Numberss.indat[i][3]);
 			}
 
@@ -206,7 +212,8 @@ public class calcu {
 
 		int amounttket_day_teenager = 0;
 		for (int i = 0; i < Numberss.row; i++) {
-			if (Numberss.indat[i][1].equals("주간") && Numberss.indat[i][2].equals("청소년")) {
+			if (Numberss.indat[i][0].equals(Numberss.date) && Numberss.indat[i][1].equals("주간")
+					&& Numberss.indat[i][2].equals("청소년")) {
 				amounttket_day_teenager += Integer.parseInt(Numberss.indat[i][3]);
 			}
 
@@ -219,7 +226,8 @@ public class calcu {
 
 		int amounttket_day_child = 0;
 		for (int i = 0; i < Numberss.row; i++) {
-			if (Numberss.indat[i][1].equals("주간") && Numberss.indat[i][2].equals("소아")) {
+			if (Numberss.indat[i][0].equals(Numberss.date) && Numberss.indat[i][1].equals("주간")
+					&& Numberss.indat[i][2].equals("소아")) {
 				amounttket_day_child += Integer.parseInt(Numberss.indat[i][3]);
 			}
 
@@ -231,7 +239,8 @@ public class calcu {
 
 		int amounttket_day_adult = 0;
 		for (int i = 0; i < Numberss.row; i++) {
-			if (Numberss.indat[i][1].equals("주간") && Numberss.indat[i][2].equals("대인")) {
+			if (Numberss.indat[i][0].equals(Numberss.date) && Numberss.indat[i][1].equals("주간")
+					&& Numberss.indat[i][2].equals("대인")) {
 				amounttket_day_adult += Integer.parseInt(Numberss.indat[i][3]);
 			}
 
@@ -243,7 +252,8 @@ public class calcu {
 
 		int amounttket_day_senior = 0;
 		for (int i = 0; i < Numberss.row; i++) {
-			if (Numberss.indat[i][1].equals("주간") && Numberss.indat[i][2].equals("노인")) {
+			if (Numberss.indat[i][0].equals(Numberss.date) && Numberss.indat[i][1].equals("주간")
+					&& Numberss.indat[i][2].equals("노인")) {
 				amounttket_day_senior += Integer.parseInt(Numberss.indat[i][3]);
 			}
 

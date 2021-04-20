@@ -24,8 +24,7 @@ public class calcu {
 		String strnight = "";
 		String line = "";
 
-		BufferedReader reader = new BufferedReader(
-				new FileReader("C:\\Users\\kopo\\eclipse-workspace\\Amunsement\\test.csv"));
+		BufferedReader reader = new BufferedReader(new FileReader("test.csv"));
 		int row = 0;
 		while ((line = reader.readLine()) != null) {
 			for (int z = 0; z < 6; z++) {
@@ -40,8 +39,8 @@ public class calcu {
 
 		}
 		String date = scan.nextLine();
-		
-		for (int i= 0; i < row-1; i++) {
+
+		for (int i = 0; i < row - 1; i++) {
 
 			if (indat[i][0].equals(date) && indat[i][1].equals("주간")) {
 				sumday += Integer.parseInt(indat[i][4]);

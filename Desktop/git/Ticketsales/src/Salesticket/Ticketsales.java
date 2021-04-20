@@ -9,9 +9,7 @@ public class Ticketsales {
 
 	public static void main(String[] args) throws Exception {
 		// TODO Auto-generated method stub
-
 		calcu cal = new calcu();
-
 		cal.calday();
 
 	}

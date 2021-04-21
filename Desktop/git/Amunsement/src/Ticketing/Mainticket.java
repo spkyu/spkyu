@@ -39,13 +39,17 @@ public class Mainticket {
 						Numbers.ticketprice, Numbers.strdiscount));
 				System.out.println("합계금액" + Numbers.ticketprice);
 				Numbers.countinue = input.continuee();
+				DATAbasewrite database = new DATAbasewrite();
+
 				if (Numbers.countinue == 2) {
 					System.out.println("발권내용\n");
 					for (int z = 0; z < Numbers.count; z++) {
 						System.out.println(arralist.get(z));
 						fwfw.filewrite(arralist.get(z) + "\r\n");
+						database.databasewrite(arralist.get(z));
+
 					}
-					System.out.printf("입장료 총액: %8d \n ", Numbers.totalsum);
+					System.out.printf("입장료 총액: %8s \n ", Numbers.totalsum);
 					break;
 				}
 			}

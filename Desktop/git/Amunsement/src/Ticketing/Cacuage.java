@@ -1,9 +1,9 @@
 package Ticketing;
 
 public class Cacuage {
-	public int calage(int daynight, int realage, int amountticket) {
+	public double calage(int daynight, int realage, double amountticket) {
 //wow
-		int ticketprice = 0;
+		double ticketprice = 0;
 		if (daynight == 1) {
 			if ((realage <= 21) && (realage >= 20)) {
 				ticketprice = Numbers.ticket_Price_Day_new;// 애
@@ -71,7 +71,7 @@ public class Cacuage {
 		}
 	}
 
-	public int discount(int discount, int ticketprice) {
+	public double discount(double discount, double ticketprice) {
 
 		if (discount == 1) {
 			ticketprice = ticketprice * Numbers.Discount_no;// 없음
@@ -94,7 +94,7 @@ public class Cacuage {
 
 	}
 
-	public String discountString(int discount) {
+	public String discountString(double discount) {
 		String str = "";
 		if (discount == 1) {
 			str = "없음";// 없음

@@ -6,16 +6,18 @@ import java.util.Calendar;
 
 public class Printarray {
 
-	public String printarray(String strdaynight, String strold, int amountticket, int ticketprice,
-			String strdiscount) {
+	public String printarray(String strdaynight, String strold, double amountticket, double ticketprice, String strdiscount) {
 
-		
 		Calendar calt = Calendar.getInstance();
-		SimpleDateFormat sdt = new SimpleDateFormat("YYYY.MM.dd");
-		
-		String str=(sdt.format(calt.getTime()) + "," + strdaynight + "," + strold + "," + amountticket + ","
-					+ ticketprice + "," + strdiscount);
-			
+		SimpleDateFormat sdt = new SimpleDateFormat("YYYY-MM-dd");
+
+		String str = (sdt.format(calt.getTime()) + "'" 
+		+ "," + " '" + strdaynight + "'"
+		+ "," + " '"+ strold + "'"
+		+ "," + " '" + amountticket +"'" 
+		+ "," + " '" + ticketprice + "'" 
+		+ "," + " '" + strdiscount );
+
 		return str;
 
 	}
